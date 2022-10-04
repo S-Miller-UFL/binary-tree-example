@@ -3,6 +3,7 @@
 #include <string>
 #include <random>
 #include <fstream>
+#include "test.h"
 /* Note: 
 	1. You will have to comment main() when unit testing your code because catch uses its own main().
 	2. You will submit this main.cpp file and any header files you have on Gradescope. 
@@ -19,19 +20,19 @@ void fileinput();
 //make one for file streams too
 
 
-//bugs:
-/*
-* inputting "00001234" gives "1234"
-* output file for testing is blank
-*/
-
 
 int main()
 {
-	Binary_tree bst;
-	command(bst);
+	test t;
+	t.insert_test();
+	t.remove_test();
+	t.balance_test();
+	//Binary_tree bst;
+	//command(bst);
 	return 0;
 }
+
+
 
 //look into using string.compare instead of ==
 

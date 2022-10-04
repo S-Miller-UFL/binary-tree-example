@@ -1,14 +1,18 @@
 #include "../src/main.cpp"
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
+#include "src/test.h"
 
 /*
 	To check output (At the Project1 directory):
 		g++ -std=c++14 -Werror -Wuninitialized -o build/test test-unit/test.cpp && build/test
 */
 
-TEST_CASE("BST Insert", "[flag]"){
-	
+TEST_CASE("BST Insert", "[flag]")
+{
+	test t;
+	t.insert_test();
+	/*
 		Binary_tree tree;   // Create a Tree object 
 		tree.insert(45674567, "Brandon");
 		tree.insert(35455565, "Brian" );
@@ -28,4 +32,5 @@ TEST_CASE("BST Insert", "[flag]"){
 		REQUIRE(actualOutput == expectedOutput);
 	
 	REQUIRE(1 == 1);
+	*/
 }
