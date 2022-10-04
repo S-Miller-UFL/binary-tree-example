@@ -1,0 +1,10 @@
+﻿  main.cpp
+C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(48,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(55,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(63,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(65,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(83,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(85,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  test.cpp
+  Generating Code...
+  project_1.vcxproj -> C:\Users\steve\source\repos\COP3530\project 1\x64\Debug\project_1.exe

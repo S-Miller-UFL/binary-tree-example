@@ -1,0 +1,41 @@
+5
+search 12345678
+search "Adam"
+insert "Adam" 12345678
+search 23456789
+search 12345678
+8
+insert "David" 31239830
+insert "Danielle" 27782901
+insert "David" 11133245
+search "Danielle"
+search "David"
+search 11133245
+search 27782901
+search 31239830
+6
+insert "Evan" 44985771
+insert "Earl" 31834874
+insert "Erica" 21456789
+printLevelCount
+insert "Enrique" 17891824
+printLevelCount
+8
+insert "Brandon" 45674567
+insert "Brian" 35455565
+insert "Briana" 87878787
+insert "Bella" 95462138
+printInorder
+remove 45674567
+removeInorder 2
+9
+insert "Caroline" 50005000
+insert "Cory" 35354334
+insert "Cecilia" 76543210
+insert "Carla" 56567342
+insert "Cody" 83711221
+insert "Chris" 17449900
+printInorder
+printPreorder
+printPostorder
+printInorder
