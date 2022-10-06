@@ -6,6 +6,7 @@
 //got help from blake shaffer on 9/27/2022
 //got help from richie on 10/3/2022
 //got help from sarah on 10/3/2022
+//got help from amanpreet kapoor (the man himself) on 10/5/2022
 
 class Binary_tree
 {
@@ -26,19 +27,6 @@ public:
 			name = "";
 			balance_factor = 0;
 		}
-		//for debugging only
-		int fail_code = 0;
-		//fail codes:
-		/*
-		* 0: no failure
-		* 1: already exists
-		* 2: bad balance
-		* 3: unspecified error
-		* 4: node doesnt exist
-		* 5: failed to add
-		* 6: failed to remove
-		*/
-		////////////////////
 	};
 	//constructor
 	Binary_tree();
@@ -55,15 +43,6 @@ public:
 	void print_postorder_helper();
 	void print_inorder_helper();
 	void print_level_count();
-	//for debugging only
-	std::queue<int> inorder();
-	void add_failed_nodes(std::string const&, std::string const&, int const&, int const&);
-	void display_failed();
-	std::queue<Node*> inorder_q();
-	//int check_balance(Node*);
-	//Node* priv_search(int const&, Node*);
-	//Node* get_tree_root();
-	//////////////////////
 	//destructor
 	~Binary_tree();
 
@@ -96,9 +75,6 @@ private:
 	//variables
 	int node_count;
 	Node* tree_root;
-	//for debugging only
-	std::queue<Node*> failed_add;
-	///////////////////////
 };
 
 /*//constructor*/
@@ -516,89 +492,9 @@ void Binary_tree::change_node_data(Binary_tree::Node* target, unsigned int const
 {
 	target->id = data;
 }
-
-/*//for debugging only*/
-void Binary_tree::add_failed_nodes(std::string const& id_str, std::string const& name, int const& id, int const& fail_code)
-{
-	Binary_tree::Node* n = new Binary_tree::Node;
-	n->id = id;
-	n->name = name;
-	n->id_str = id_str;
-	n->fail_code = fail_code;
-	failed_add.push(n);
-}
-///////////////////
-
-
-/*//for debugging only*/
-std::queue<int> Binary_tree::inorder()
-{
-	std::queue<Binary_tree::Node*> q;
-	get_inorder(this->tree_root, q);
-	std::queue<int> v;
-	while (!q.empty())
-	{
-		v.push(q.front()->id);
-		q.pop();
-	}
-	return v;
-}
-////////////////////////
-
-
-/*//for debugging only*/
-std::queue<Binary_tree::Node*> Binary_tree::inorder_q()
-{
-	std::queue<Binary_tree::Node*> q;
-	get_inorder(this->tree_root, q);
-	return q;
-}
-///////////////////////
-
-
-/*//for debugging only*/
-void Binary_tree::display_failed()
-{
-	if (!failed_add.empty())
-	{
-		while (!failed_add.empty())
-		{
-			std::cout << "id string: " << failed_add.front()->id_str << std::endl;
-			std::cout << "id: " << failed_add.front()->id << std::endl;
-			std::cout << "name: " << failed_add.front()->name << std::endl;
-			if (failed_add.front()->fail_code == 1)
-			{
-				std::cout << "the id already exists inside the tree" << std::endl;
-			}
-			else if (failed_add.front()->fail_code == 2)
-			{
-				std::cout << "the balance is incorrect " << failed_add.front()->balance_factor <<std::endl;
-			}
-			else if (failed_add.front()->fail_code == 4)
-			{
-				std::cout << "node does not exist" << std::endl;
-			}
-			else
-			{
-				std::cout << "unspecified failure" << std::endl;
-			}
-			failed_add.pop();
-		}
-	}
-	else
-	{
-		std::cout << "nothing failed!" << std::endl;
-	}
-
-}
-///////////////////////
-
 /*//destructor*/
 Binary_tree::~Binary_tree()
 {
-	//for debugging only
-	std::cout << "clearing tree..." << std::endl;
-	//////////////////////////
 	std::queue<Binary_tree::Node*> q;
 	get_inorder(this->tree_root, q);
 	while (!q.empty())

@@ -1,18 +1,7 @@
 ﻿  main.cpp
-C:\Users\steve\source\repos\COP3530\project 1\src\test.h(37,6): error C2248: 'Binary_tree::priv_search': cannot access private member declared in class 'Binary_tree'
-C:\Users\steve\source\repos\COP3530\project 1\src\binary_tree.h(332): message : see declaration of 'Binary_tree::priv_search'
-C:\Users\steve\source\repos\COP3530\project 1\src\binary_tree.h(10): message : see declaration of 'Binary_tree'
-C:\Users\steve\source\repos\COP3530\project 1\src\test.h(75,6): error C2248: 'Binary_tree::priv_search': cannot access private member declared in class 'Binary_tree'
-C:\Users\steve\source\repos\COP3530\project 1\src\binary_tree.h(332): message : see declaration of 'Binary_tree::priv_search'
-C:\Users\steve\source\repos\COP3530\project 1\src\binary_tree.h(10): message : see declaration of 'Binary_tree'
-C:\Users\steve\source\repos\COP3530\project 1\src\test.h(101,6): error C2248: 'Binary_tree::check_balance': cannot access private member declared in class 'Binary_tree'
-C:\Users\steve\source\repos\COP3530\project 1\src\binary_tree.h(404): message : see declaration of 'Binary_tree::check_balance'
-C:\Users\steve\source\repos\COP3530\project 1\src\binary_tree.h(10): message : see declaration of 'Binary_tree'
-C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(49,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(56,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(64,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(66,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(84,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(86,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(32,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(59,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(61,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   test.cpp
   Generating Code...
+  project_1.vcxproj -> C:\Users\steve\source\repos\COP3530\project 1\x64\Debug\project_1.exe

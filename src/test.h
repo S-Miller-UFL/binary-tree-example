@@ -10,11 +10,12 @@ public:
 	* remove test
 	* balance test
 	* print test
+	* search test
 	*/
 	void insert_test();
 	void remove_test();
 	void balance_test();
-	void print_test();
+	void search_test();
 	std::string random_name();
 	std::string random_id();
 };
@@ -42,7 +43,7 @@ void test::insert_test()
 		q.pop();
 	}
 	bst.display_failed();
-
+	std::cout << "clearing tree..." << std::endl;
 }
 void test::remove_test()
 {
@@ -80,6 +81,7 @@ void test::remove_test()
 		j.pop();
 	}
 	bst.display_failed();
+	std::cout << "clearing tree..." << std::endl;
 }
 void test::balance_test()
 {
@@ -106,10 +108,40 @@ void test::balance_test()
 		q.pop();
 	}
 	bst.display_failed();
+	std::cout << "clearing tree..." << std::endl;
 }
-void test::print_test()
-{
 
+void test::search_test()
+{
+	Binary_tree bst;
+	int i = 0;
+	std::queue<int> q;
+	std::queue<Binary_tree::Node*> j;
+	std::cout << "search test: " << std::endl;
+	std::cout << "enter amount of id's to insert into tree: ";
+	std::cin >> i;
+	for (int j = 0; j < i; j++)
+	{
+		//std::cout << j << ": ";
+		bst.insert(random_id(), random_name());
+	}
+	q = bst.inorder();
+	j = bst.preorder_q();
+
+	//j = bst.inorder_q();
+	//call remove function for entire queue
+	while (!j.empty())
+	{
+		std::cout << j.front()->id << std::endl;
+		if (bst.priv_search(j.front()->id,bst.get_tree_root()) == nullptr)
+		{
+			bst.add_failed_nodes(j.front()->id_str, j.front()->name, j.front()->id, 4);
+		}
+		j.pop();
+	}
+	
+	bst.display_failed();
+	std::cout << "clearing tree..." << std::endl;
 }
 
 std::string test::random_name()
