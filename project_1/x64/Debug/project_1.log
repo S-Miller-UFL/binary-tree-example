@@ -1,7 +1,7 @@
 ﻿  main.cpp
-C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(32,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(59,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\steve\source\repos\COP3530\project 1\src\main.cpp(61,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\cop3530\project_1\src\main.cpp(32,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\cop3530\project_1\src\main.cpp(59,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\steve\source\cop3530\project_1\src\main.cpp(61,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   test.cpp
   Generating Code...
-  project_1.vcxproj -> C:\Users\steve\source\repos\COP3530\project 1\x64\Debug\project_1.exe
+  project_1.vcxproj -> C:\Users\steve\source\cop3530\project_1\x64\Debug\project_1.exe

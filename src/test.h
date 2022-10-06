@@ -2,6 +2,7 @@
 #include "binary_tree.h"
 #include <iostream>
 #include <string>
+#include "catch.hpp"
 class test
 {
 public:

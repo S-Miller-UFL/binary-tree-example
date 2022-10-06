@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClInclude Include="..\src\binary_tree.h" />
     <ClInclude Include="..\src\test.h" />
+    <ClInclude Include="..\test-unit\catch.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

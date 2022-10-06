@@ -29,5 +29,8 @@
     <ClInclude Include="..\src\test.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\test-unit\catch.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
